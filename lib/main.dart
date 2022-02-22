@@ -70,7 +70,7 @@ class MyApp extends StatelessWidget {
                SizedBox(
                 child: Image.network( "https://eu-images.contentstack.com/v3/assets/bltcc7a7ffd2fbf71f5/blt3dbe9d4135f085ef/60da8a26467112384c77686e/8e9f68dc9178d045468e572aefae38ffe9bf117a.jpg?auto=webp&format=pjpg&quality=80&width=1024",
                 width: 500.0,
-                height: 250.0,
+                height: 210.0,
                 fit: fitWidth,
                 ),
               )
