@@ -28,71 +28,66 @@ class MyApp extends StatelessWidget {
                   ),
                 ],
               ),
-              Stack(
-                children: <Widget>[
-                  
-                  Row(
+              Row(
+                        children: [
+                          Expanded(
+                            child: Container(
+                              margin: const EdgeInsets.fromLTRB(0, 0, 0, 0), 
+                              decoration: BoxDecoration(border: Border.all(color: Colors.purpleAccent, width: 2)),
+                              child: Image.network(
+                              "https://eu-images.contentstack.com/v3/assets/bltcc7a7ffd2fbf71f5/blt3dbe9d4135f085ef/60da8a26467112384c77686e/8e9f68dc9178d045468e572aefae38ffe9bf117a.jpg?auto=webp&format=pjpg&quality=80&width=1024",
+                              fit: BoxFit.fill,
+                            ),
+                            )
+                          )
+                        ],
+                      ),
+                      Row(
                     children: [
                       Expanded(child:
                         Container(
-                          margin: const EdgeInsets.fromLTRB(16, 0, 16, 0),
-                          decoration: BoxDecoration(border: Border.all(color: Colors.purpleAccent, width: 4)),
-                          child: Image.network("https://akcdn.detik.net.id/community/media/visual/2019/04/08/b61401bc-e2fc-483c-9d0e-a5639194f37f_169.jpeg?w=700&q=90",
-                          width: 400,
-                          height: 300,
-                          fit: BoxFit.fitWidth)
-                        ),
-                      )  
-                    ],
-                  ),
-                  
-                  Row(
-                    children: [
-                      Expanded(child:
-                        Container(
-                          margin: const EdgeInsets.fromLTRB(16, 0, 16, 0),
-                          decoration: BoxDecoration(border: Border.all(color: Colors.purpleAccent, width: 4)),
+                          margin: const EdgeInsets.fromLTRB(0, 0, 0, 0),
+                          decoration: BoxDecoration(border: Border.all(color: Colors.purpleAccent, width: 1)),
                           alignment: Alignment.bottomCenter,
                           child: const Text("Costa Mendekat ke Palmeiras", 
                             style: TextStyle(
-                              fontSize: 30, 
+                              fontSize: 20, 
                               fontWeight: FontWeight.bold
                             ),
                           ),
-                          padding: const EdgeInsets.all(20), 
+                          padding: const EdgeInsets.all(15), 
                         ),
                       ),
                     ],
                   ),
-                                   Row(
+                      Row(
                     children: [
                       Expanded(child: 
                         Container(
-                          margin: const EdgeInsets.fromLTRB(16, 0, 16, 8),
+                          margin: const EdgeInsets.fromLTRB(0, 0, 0, 0),
                           decoration: const BoxDecoration(color: Colors.purpleAccent),
                           child: const Text("Transfer", 
                             style: TextStyle(
-                              fontSize: 20, 
+                              fontSize: 15, 
+                              fontWeight: FontWeight.bold
                             ),
                           ),
-                          padding: const EdgeInsets.all(20),
+                          padding: const EdgeInsets.all(10),
                         ),
                       ),
                     ],
                   ),
-                ],
-              ),
               Container(
                 margin: EdgeInsets.only(top: 15),
                 decoration:
-                    BoxDecoration(border: Border.all(color: Colors.grey)),
+                    BoxDecoration(border: Border.all(color: Colors.blueGrey)),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     const Expanded(
                         child: Image(
                       image: NetworkImage(
-                          "https://akcdn.detik.net.id/community/media/visual/2020/10/21/gerard-pique_169.jpeg?w=700&q=90"),
+                          "https://media.gettyimages.com/photos/gerard-pique-of-fc-barcelona-receives-a-yellow-card-from-referee-del-picture-id1228834227?s=2048x2048"),
                     )),
                     const VerticalDivider(width: 1.0),
                     Expanded(
@@ -100,7 +95,7 @@ class MyApp extends StatelessWidget {
                             child: Container(
                       margin: const EdgeInsets.only(left: 8),
                       child: const Text(
-                          "Pique Bilang Wasit untungkan Madrid,Koemon Tepok Jidat"),
+                          "Pique Bilang Wasit Untungkan Madrid, Koemon Tepok Jidat"),
                     ))),
                   ],
                 ),
@@ -108,7 +103,7 @@ class MyApp extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(16.0),
                 decoration:
-                    BoxDecoration(border: Border.all(color: Colors.grey)),
+                    BoxDecoration(border: Border.all(color: Colors.blueGrey)),
                 child: Row(
                   children: const <Widget>[
                     Text(
@@ -119,7 +114,43 @@ class MyApp extends StatelessWidget {
                   ],
                 ),
               ),
-
+              Container(
+                margin: EdgeInsets.only(top: 15),
+                decoration:
+                    BoxDecoration(border: Border.all(color: Colors.blueGrey)),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    const Expanded(
+                        child: Image(
+                      image: NetworkImage(
+                          "https://media.gettyimages.com/photos/gerard-pique-of-fc-barcelona-receives-a-yellow-card-from-referee-del-picture-id1228834227?s=2048x2048"),
+                    )),
+                    const VerticalDivider(width: 1.0),
+                    Expanded(
+                        child: Center(
+                            child: Container(
+                      margin: const EdgeInsets.only(left: 8),
+                      child: const Text(
+                          "Pique Bilang Wasit Untungkan Madrid, Koemon Tepok Jidat"),
+                    ))),
+                  ],
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.all(16.0),
+                decoration:
+                    BoxDecoration(border: Border.all(color: Colors.blueGrey)),
+                child: Row(
+                  children: const <Widget>[
+                    Text(
+                      "Barcelona Feb 13,2021",
+                      style: TextStyle(
+                          fontSize: 16, fontWeight: FontWeight.normal),
+                    )
+                  ],
+                ),
+              )
             ],
           )),
     );
